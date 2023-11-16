@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+		
+        <title>Weal Cook / Accueil</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- RESPONSIVE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="Style/Style.css">
+
+		<!-- JS -->
+		<script src="Js/ap.js"></script>
+		
+		<!-- JS LIKE -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+        <!-- FONT -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pompiere&display=swap" rel="stylesheet">
+
+		
+        <!-- FAVICON -->
+        <link id="favicon" rel="icon" rel="image/png"  href="Img/Img1.png">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	
+    </head>
+    
+
+    <body>
+
+		
+
+        <!-- TETE -->
+		
+        
+		<header>
+			<nav>
+				<div id="toggle" class="logo">
+					<i id="logo" class="fa-solid fa-burger"></i>
+				</div>
+				<ul>
+					<li><a id="marquage" class="souris"  href="Index.html">Accueil</a></li>
+					<li><a class="souris" href="Page/avis.html">Avis</a></li>
+
+					<li><a class="souris" href="Page/contact.html">Recette</a></li>
+				</ul>
+
+				<button class="button" style="font-family: 'Dancing Script', cursive;">Contact</button>
+				
+			</nav>
+			
+
+			
+
+
+			<!--JS MODE-->
+
+
+			<script>
+				const switchThemeBtn = document.querySelector('#toggle')
+				let toggleTheme = 0;
+
+				switchThemeBtn.addEventListener('click', () => {
+
+					if(toggleTheme === 0) {
+
+						document.documentElement.style.setProperty('--background_1', 'black');
+						document.documentElement.style.setProperty('--background_2', 'white');
+						document.documentElement.style.setProperty('--background_3', '#457b9d');
+						document.documentElement.style.setProperty('--police', 'Lato')
+						document.documentElement.style.setProperty('--fond','#edf2f4')
+						document.documentElement.style.setProperty('--hallowen','black')
+						document.documentElement.style.setProperty('--lien','#08be93')
+						document.documentElement.style.setProperty('--souris','#bc4749')
+						document.documentElement.style.setProperty('--scroll','#95d5b2')
+						document.documentElement.style.setProperty('--rubant_fonce','#95d5b2')
+						document.documentElement.style.setProperty('--rubant_clair','#b7e4c7')
+						document.documentElement.style.setProperty('--trait','#a8dadc')
+						document.documentElement.style.setProperty('--recherche','#95d5b27f')
+						document.documentElement.style.setProperty('--hallowen_logo','white')
+						document.documentElement.style.setProperty('--marquage','#40916c')
+						document.documentElement.style.setProperty('--cart_fond_1','#dfedf2')
+						document.documentElement.style.setProperty('--cart_fond_2','#dfedf2')
+						document.documentElement.style.setProperty('--cart_fond_3','#dfedf2')
+						document.documentElement.style.setProperty('--cart_fond_4','#dfedf2')
+
+
+						toggleTheme++;
+
+					} else {
+
+						document.documentElement.style.setProperty('--background_1', 'white');
+						document.documentElement.style.setProperty('--background_2', 'black');
+						document.documentElement.style.setProperty('--background_3', '#cd6a2e');
+						document.documentElement.style.setProperty('--police', 'Creepster')
+						document.documentElement.style.setProperty('--fond','#262626')
+						document.documentElement.style.setProperty('--hallowen','#cd6a2e')
+						document.documentElement.style.setProperty('--lien','#cd6a2e')
+						document.documentElement.style.setProperty('--souris','#e85d04')
+						document.documentElement.style.setProperty('--scroll','#cd6a2e')
+						document.documentElement.style.setProperty('--rubant_fonce','#cd6b2ed4')
+						document.documentElement.style.setProperty('--rubant_clair','#cd6b2e8c')
+						document.documentElement.style.setProperty('--trait','#e85d04')
+						document.documentElement.style.setProperty('--recherche','#cd6a2e7f')
+						document.documentElement.style.setProperty('--hallowen_logo','#cd6a2e')
+						document.documentElement.style.setProperty('--marquage','#cd6a2e')
+						document.documentElement.style.setProperty('--cart_fond_1','#cd6a2e7f')
+						document.documentElement.style.setProperty('--cart_fond_2','#cd6a2e7f')
+						document.documentElement.style.setProperty('--cart_fond_3','#cd6a2e7f')
+						document.documentElement.style.setProperty('--cart_fond_4','#cd6a2e7f')
+						toggleTheme--;
+					}
+				})
+
+			</script>
+			
+
+			<!--JS RACCOURCI-->
+
+			<script>
+								
+				document.onkeydown=function(e){
+					if (e.altKey && e.key == "w"){
+						window.location.href ="surprise.html";
+					}
+					if (e.altKey && e.key =="x")
+						window.location.href ="#popup"
+
+						
+
+				}
+
+			</script>
+
+			
+			<!-- JS LIKE -->
+
+			<script >
+				$(document).ready(function(){
+				  $('.content').click(function(){
+					
+					$('.heart').toggleClass("heart-active")
+				  });
+				});
+			</script>
+
+
+
+
+		</header>
+		
+		
+		
+		<!--  BIENVENUE -->
+		<div class="caroussel-container">
+			<div id="caroussel">
+				<div class="images">
+					<img id="img" src="Img/Img15.jpg" alt="">
+					<img id="img" src="Img/caroussel_4.png" alt="">
+					<img id="img" src="Img/caroussel_2.png" alt="">
+					<img id="img" src="Img/caroussel_3.png" alt="">
+				</div>
+
+				<div class="contour_bienvenue"  >
+					<div >
+						<div class="bienvenue">
+							<h1 class="bienvenue_1">WEAL COOK</h1>
+							<h3 class="bienvenue_2">
+							Vous recherchez a vous faire un repas rapide et avec bonheur ? , 
+							<br>
+							Alors vous-êtes sur le bon endroit pour decouvrir les meilleurs recettes .
+							</h3>
+		
+							<div class="recherche">	
+								
+								<input class="input" id="searchInput" type="text" placeholder="Rechercher votre bonheur " />
+								<!--<i id="recherche" class="fa-solid fa-magnifying-glass fa-fade" style="color: #000000;"></i>-->
+								
+		
+							</div>
+						</div>
+						
+		
+					</div>	
+				</div>
+			</div>
+		</div>
+	
+
+	
+
+		<!-- RECETTE -->
+		<div class="RECETTE">
+			
+			<h2  class="titre_categorie">CATEGORIE</h2>
+			
+
+			<div class="les_recettes">
+				<div class="categorie">
+					<a href=""><i class="fa-solid fa-burger"></i></a>
+					
+					
+					<h3 id="catégorie_1">Plat</h3>
+					
+				</div>
+
+				<div class="categorie">
+					<a href=""><i class="fa-solid fa-cake-candles" ></i></a>
+					
+					
+					<h3 id="catégorie_2">Dessert</h3>
+					
+				</div>
+
+				<div class="categorie">
+					<a href=""><i class="fa-solid fa-leaf" ></i></a>
+					
+					
+					<h3 id="catégorie_3">Végétarien</h3>
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+		<!-- LES TOPS -->
+
+		<div class="La_patisserie">
+			<h1 id="titre_patisserie">꧁ LES RECETTES EN TOP ꧂</h1>
+			<div class="Patisserie">
+				
+				<div class="cart_patisserie">
+
+					<img class="Side patisserie_1_face" id="patisserie_1"  src="Img/croissant.png" alt="">
+		
+					<div class="Side patisserie_1_arriere">
+						<div class="Face_arriere">
+							<h3 id="Nom">CROISSANT</h3>
+
+							<a id="VOIR_plus" href="Page/croissant.html">voir plus</a>
+							
+							<!-- LIKE -->
+	
+							<div class="heart-btn">
+								<div class="content">
+								<span class="heart"></span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cart_patisserie">
+
+					<img class="Side patisserie_2_face" id="patisserie_2"  src="Img/photocrepe.jpeg" alt="">
+		
+					<div class="Side patisserie_2_arriere">
+						<div class="Face_arriere">
+							<h3 id="Nom">CREPE</h3>
+
+							<a id="VOIR_plus" href="Page/crêpe.html">voir plus</a>
+
+							<!-- LIKE -->
+	
+							<div class="heart-btn">
+								<div class="content">
+								<span class="heart"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="cart_patisserie">
+
+					<img class="Side patisserie_3_face" id="patisserie_3"  src="Img/cookie.png" alt="">
+		
+					<div class="Side patisserie_3_arriere">
+						<div class="Face_arriere">
+							<h3 id="Nom">COOKIE</h3>
+
+							<a id="VOIR_plus" href="Page/cookie.html">voir plus</a>
+
+							<!-- LIKE -->
+	
+							<div class="heart-btn">
+								<div class="content">
+								<span class="heart"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				
+
+			</div>
+
+		</div>
+		
+
+		<!-- HORIZONTAL -->
+		<div class="block_horizontal">
+			<h1 id="populaire">PLAT</h1>
+
+			<div class="carousel-container">
+				<button class="nav-btn" id="prevBtn" onclick="prevRecipe()">❮</button>
+				<div class="horizontal" id="recipe-carousel">
+					<div class="cart">
+						<img class="side recette_1_face" id="recette_1" src="Img/poulet roti.jpeg" alt="">
+						<div class="side recette_1_arriere">
+							<div class="face_arriere">
+								<h3 id="nom">POULET ROTI</h3>
+								<a id="voir_plus" href="Page/poulet_roti.html">voir plus</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Ajoute d'autres recettes ici -->
+
+					<div class="cart">
+		
+						<img class="side recette_2_face" id="recette_2"  src="Img/lasagne.jpg" alt="">
+			
+						<div class="side recette_2_arriere">
+							<div class="face_arriere">
+								<h3 id="nom">LASAGNE</h3>
+								<a id="voir_plus" href="Page/Lasagne.html">voir plus</a>
+							</div>
+						</div>
+					</div>
+	
+					
+					<div class="cart">
+						<img class="side recette_3_face" id="recette_3" src="Img/Img4.png" alt="">
+	
+						<div class="side recette_3_arriere">
+							<div class="face_arriere">
+								<h3 id="nom">PIZZA</h3>
+								<a id="voir_plus" href="Page/Pizza.html">voir plus</a>
+							</div>
+						</div>
+	
+					</div>
+	
+					<div class="cart">
+						
+						<img class="side recette_4_face" id="recette_4" src="Img/riz-cantonais.jpg" alt="">
+						
+						<div class="side recette_4_arriere">
+							<div class="face_arriere">
+								<h3 id="nom">RIZ <br> CANTONAIS</h3>
+								<a  id="voir_plus" href="Page/riz_contonais.html">voir plus</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="cart">
+					
+						<img class="side recette_5_face" id="recette_5" src="Img/carbonara.jpg" alt="">
+						
+						<div class="side recette_5_arriere">
+							<div class="face_arriere">
+								<h3 id="nom">CARBONARA</h3>
+								<a id="voir_plus" href="Page/Carbonara.html">voir plus</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="cart">
+					
+						<img class="side recette_6_face"id="recette_6" src="Img/burger.png" alt="">
+					
+						<div class="side recette_6_arriere">
+							<div class="face_arriere">
+								<h3 id="nom">BURGER</h3>
+								<a id="voir_plus" href="Page/Burger.html">voir plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="nav-btn" id="nextBtn" onclick="nextRecipe()">❯</button>
+				
+			</div>
+
+			<script>
+				let currentRecipeIndex = 0;
+				const recipeContainer = document.getElementById("recipe-carousel");
+				const recipes = document.querySelectorAll(".horizontal .cart");
+
+				function showRecipes() {
+					for (let i = 0; i < recipes.length; i++) {
+						recipes[i].style.display = "none";
+					}
+
+					for (let i = currentRecipeIndex; i < currentRecipeIndex + 3; i++) {
+						recipes[i % recipes.length].style.display = "inline-flex";
+					}
+				}
+
+				function prevRecipe() {
+					currentRecipeIndex = (currentRecipeIndex - 1 + recipes.length) % recipes.length;
+					showRecipes();
+				}
+
+				function nextRecipe() {
+					currentRecipeIndex = (currentRecipeIndex + 1) % recipes.length;
+					showRecipes();
+				}
+
+				// Montrer seulement les trois premières recettes au départ
+				showRecipes();
+
+
+			</script>
+		</div>
+		
+
+		<!--POPUP-->
+
+		<div class="container">
+           
+            <div class="popup" id="popup">
+                <div class="popup_inner">
+                    <div class="popup_note">
+                        <h3 id="question">ETES VOUS SUR?</h3>
+                        
+						<div class="oui_non">
+							<a id="oui" href="https://google.com">OUI</a>
+							
+						</div>
+						
+						
+                    </div>
+                    <a class="popup_close" href="#">X</a>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+		
+		
+		
+
+		<!-- INFO -->
+
+		<div  class="Info" >
+
+			
+			<div class="titre_info">INFO</div>
+	
+
+
+			<p id="paragraphe_info">
+				Notre site vous propose beaucoup de recettes , n'hesitez pas à laisser un avis ou à vous inscrire!
+			
+			</p>
+			<img id="info_logo" src="Img/Img1.png" alt="">
+		</div>
+
+		
+		<!-- LE MONDE -->
+
+		<div class="La_cuisine_du_monde">
+			<h1 id="titre_monde">꧁ CUISINE DU MONDE ꧂</h1>
+
+			<div class="Le_monde">
+
+				<div class="cart_monde">
+
+					<img class="SIDE monde_1_face" id="monde_1"  src="Img/Brochette.jpg" alt="">
+		
+					<div class="SIDE monde_1_arriere">
+						<div class="FACE_arriere">
+							<h3 id="NOM">BROCHETTE VEGE</h3>
+
+							<a id="VOIR_plus" href="Page/brochette_vege.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cart_monde">
+
+					<img class="SIDE monde_2_face" id="monde_2"  src="Img/ratatouille.jpg" alt="">
+		
+					<div class="SIDE monde_2_arriere">
+						<div class="FACE_arriere">
+							<h3 id="NOM">RATATOUILLE</h3>
+
+							<a id="VOIR_plus" href="Page/couscous.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cart_monde">
+
+					<img class="SIDE monde_3_face" id="monde_3"  src="Img/carbonara.jpg" alt="">
+		
+					<div class="SIDE monde_3_arriere">
+						<div class="FACE_arriere">
+							<h3 id="NOM">CARBONARA</h3>
+
+							<a id="VOIR_plus" href="Page/Carbonara.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cart_monde">
+
+					<img class="SIDE monde_4_face" id="monde_4"  src="Img/sushi.jpg" alt="">
+		
+					<div class="SIDE monde_4_arriere">
+						<div class="FACE_arriere">
+							<h3 id="NOM">SUSHI</h3>
+
+							<a id="VOIR_plus" href="Page/temari_sushi.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+				
+		
+
+		</div>
+
+
+		<!-- PATISSERIE -->
+
+		<div id="choco" class="La_patisserie">
+			<h1 id="titre_patisserie">DESSERT</h1>
+			<div class="Patisserie">
+				
+				<div class="cart_patisserie">
+
+					<img class="Side patisserie_1_face" id="patisserie_1"  src="Img/croissant.png" alt="">
+		
+					<div class="Side patisserie_1_arriere">
+						<div class="Face_arriere">
+							<h3 id="Nom">CROISSANT</h3>
+
+							<a id="Voir_plus" href="Page/croissant.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cart_patisserie">
+
+					<img class="Side patisserie_2_face" id="patisserie_2"  src="Img/photocrepe.jpeg" alt="">
+		
+					<div class="Side patisserie_2_arriere">
+						<div class="Face_arriere">
+							<h3 id="Nom">CREPE</h3>
+
+							<a id="VOIR_plus" href="Page/crêpe.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="cart_patisserie">
+
+					<img class="Side patisserie_3_face" id="patisserie_3"  src="Img/cookie.png" alt="">
+		
+					<div class="Side patisserie_3_arriere">
+						<div class="Face_arriere">
+							<h3 id="Nom">COOKIE</h3>
+
+							<a id="VOIR_plus" href="Page/cookie.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div   class="cart_patisserie">
+
+					<img  class="Side patisserie_4_face" id="patisserie_4"  src="Img/tarte_au_pommes.jpg" alt="">
+		
+					<div class="Side patisserie_4_arriere">
+						<div class="Face_arriere">
+							<h3 id="Nom">TARTE AUX <br>POMMES
+							</h3>
+
+							<a id="VOIR_plus" href="Page/Tarte.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!-- AVIS -->
+		<div class="AVIS">
+			
+			<div class="titre_avis">AVIS</div>
+			
+
+			<div class="les_avis">
+				<div class="block_1">
+					<div class="avis" id="avis_1">
+						<h1 class="guillemet">❝</h1>
+						<p>
+							Je suis vraiment content d'être tombé sur un site de cuisine,
+							avec de bonnes recettes. J'avoue que la cuisine et moi, ça fait
+							deux et pour la première fois j'ai réussi une recette.
+						</p>
+						<div class="utilisateur">
+
+							<div class="profil">
+								<img class="profil-image" src="Img/garçon 3.jpg" alt="">
+							</div>
+							<div class="PSEUDO">
+								<h3 class="pseudo">Mathieu Delacroix</h3>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="avis" id="avis_2">
+						<h1 class="guillemet">❝</h1>
+						<p>
+							Très bonne accessibilité et de plus il y a des recettes
+							pour tous les goûts ! Je suis vraiment surprise par la
+							qualité des recettes et les étapes sont très bien détaillées,
+							pour ceux qui sont débutants des vidéos sont ajoutées pour vous aider.
+						</p>
+						<div class="utilisateur">
+
+							<div class="profil">
+								<img class="profil-image" src="Img/garçon 3.jpg" alt="">
+							</div>
+
+							<div class="PSEUDO">
+								<h3 class="pseudo">Sophie Dupont</h3>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<a class="PLUS" href="Page/avis.html">
+					<h3 class="PLUS">Voir plus</h3>
+				</a>
+			</div>
+		</div>
+
+
+
+		<!-- VEGETARIEN -->
+
+		<div class="VEGETARIEN">
+			<h1 id="titre_vegetarien">꧁ VEGETARIEN ꧂</h1>
+			<div class="vegetarien">
+				
+				<div class="cart_vegetarien">
+
+					<img class="SIde vegetarien_1_face" id="vegetarien_1"  src="Img/lasagne.jpg" alt="">
+		
+					<div class="SIde vegetarien_1_arriere">
+						<div class="FAce_arriere">
+							<h3 id="NOm">LASAGNE</h3>
+
+							<a id="VOir_plus" href="Page/Lasagne.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cart_vegetarien">
+
+					<img class="SIde vegetarien_2_face" id="vegetarien_2"  src="Img/burgers_vege.jpg" alt="">
+		
+					<div class="SIde vegetarien_2_arriere">
+						<div class="FAce_arriere">
+							<h3 id="NOm">BURGER</h3>
+
+							<a id="VOir_plus" href="Page/burger_vege.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="cart_vegetarien">
+
+					<img class="SIde vegetarien_3_face" id="vegetarien_3"  src="Img/Brochette.jpg" alt="">
+		
+					<div class="SIde vegetarien_3_arriere">
+						<div class="FAce_arriere">
+							<h3 id="NOm">BROCHETTE</h3>
+
+							<a id="VOir_plus" href="Page/Brochette.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cart_vegetarien">
+
+					<img class="SIde vegetarien_4_face" id="vegetarien_4"  src="Img/gratin.jpg".jpeg alt="">
+		
+					<div class="SIde vegetarien_4_arriere">
+						<div class="FAce_arriere">
+							<h3 id="NOm">GRATIN</h3>
+
+							<a id="VOir_plus" href="Page/gratin_dauphinois.html">voir plus</a>
+						</div>
+					</div>
+
+				</div>
+		
+			</div>
+		
+		</div>
+
+
+	
+
+
+
+
+		
+		
+		
+
+
+
+		<!--PIED DU PAGE  -->
+		<footer class="footer" >
+
+			<section class="partie-logo">
+
+				<div class="le-logo">
+					<a class="logo" href="">
+						<i id="logo-footer" class="fa-solid fa-burger"></i>
+					</a>
+					<h2 class="nom-logo">WEAL COOK</h2>
+				</div>
+
+				<div class="paragraph">
+					<p>hesitez pas nous rejoindre sur nos reseaux </p>
+				</div>
+
+				<div class="reseaux">
+
+					<a href=""><i class="fa-brands fa-youtube"></i></a>
+					<a href=""><i class="fa-brands fa-tiktok"></i></a>
+					<a href=""><i class="fa-brands fa-instagram"></i></a>
+
+				</div>
+
+				<div class="createur">
+					<p>@creation_wicramachine_2022</p>
+				</div>
+
+
+			</section>
+
+
+
+			
+			<section id="partie-formulaire" class="bg-gray-100">
+				<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+				<div class="rounded-lg bg-white p-8 shadow-lg max-w-md mx-auto">
+					<h2 class="text-xl font-medium mb-4">NOUS CONTACTER</h2>
+					<form action="" class="space-y-4">
+					<div>
+						<input
+						class="w-full rounded-lg border-gray-200 p-3 text-sm"
+						placeholder="Name"
+						type="text"
+						id="name"
+						style="font-family: 'Dancing Script', cursive;"
+						/>
+					</div>
+			
+					<div>
+						<input
+						class="w-full rounded-lg border-gray-200 p-3 text-sm"
+						placeholder="Email address"
+						type="email"
+						id="email"
+						style="font-family: 'Dancing Script', cursive;"
+						/>
+					</div>
+			
+					<div>
+						<textarea
+						class="w-full rounded-lg border-gray-200 p-3 text-sm"
+						placeholder="Message"
+						rows="4"
+						id="message"
+						style="font-family: 'Dancing Script', cursive;"
+						></textarea>
+					</div>
+			
+					<div class="mt-4 text-center">
+						<button
+						style="font-family: 'Dancing Script', cursive;"
+						type="submit"
+						class="inline-block w-full rounded-lg bg-black px-20 py-3 font-medium text-white sm:w-auto">
+						Send Message
+						</button>
+					</div>
+					</form>
+				</div>
+				</div>
+			</section>
+
+		
+		
+
+
+		</footer>
+
+    </body>
+
+</html>

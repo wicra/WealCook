@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    /* Ajoutez vos styles ici */
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+    }
+
+    .bg-gray-100 {
+      background-color: #f3f4f6;
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .max-w-screen-xl {
+      max-width: 1280px;
+    }
+
+    .px-4 {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .py-16 {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    .sm\:px-6 {
+      @media (min-width: 640px) {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+
+    .lg\:px-8 {
+      @media (min-width: 1024px) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+    .rounded-lg {
+      border-radius: 8px;
+    }
+
+    .bg-white {
+      background-color: #ffffff;
+    }
+
+    .p-8 {
+      padding: 16px;
+    }
+
+    .shadow-lg {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .max-w-md {
+      max-width: 28rem;
+    }
+
+    .space-y-4 > * {
+      margin-bottom: 16px;
+    }
+
+    .w-full {
+      width: 93.5%;
+    }
+
+    .border-gray-200 {
+      border-color: #e5e7eb;
+    }
+
+    .p-3 {
+      padding: 12px;
+    }
+
+    .text-sm {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .mt-4 {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .bg-black {
+      background-color: #000;
+    }
+
+    .px-5 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .py-3 {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    .font-medium {
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .text-white {
+      color: #fff;
+    }
+
+    .sm\:w-auto {
+      @media (min-width: 640px) {
+        width: auto;
+      }
+    }
+
+    /* Style ajusté pour le textarea */
+    textarea {
+      max-width: 100%;
+      width: 100%;
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="bg-gray-100">
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="rounded-lg bg-white p-8 shadow-lg max-w-md mx-auto">
+        <h2 class="text-xl font-medium mb-4">NOUS CONTACTER</h2>
+        <form action="" class="space-y-4">
+          <div>
+            <input
+              class="w-full rounded-lg border-gray-200 p-3 text-sm"
+              placeholder="Name"
+              type="text"
+              id="name"
+            />
+          </div>
+
+          <div>
+            <input
+              class="w-full rounded-lg border-gray-200 p-3 text-sm"
+              placeholder="Email address"
+              type="email"
+              id="email"
+            />
+          </div>
+
+          <div>
+            <textarea
+              class="w-full rounded-lg border-gray-200 p-3 text-sm"
+              placeholder="Message"
+              rows="4"
+              id="message"
+            ></textarea>
+          </div>
+
+          <div class="mt-4 text-center">
+            <button
+              type="submit"
+              class="inline-block w-full rounded-lg bg-black px-20 py-3 font-medium text-white sm:w-auto"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <title>Weal Cook / Avis</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- RESPONSIVE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="Style/Style.css">
+		<!-- JS -->
+		<script src="Js/ap.js"></script>
+
+
+        <!-- FONT -->
+		<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+
+		
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	
+		<link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+        <!-- FAVICON -->
+        <link id="favicon" rel="icon" rel="image/png"  href="Img/Img1.png">
+		
+
+    </head>
+    
+
+    <body>
+
+		
+
+        <!-- TETE -->
+		
+        <header class="header" >
+			
+			<a href="Index.html">	
+				<span>
+					<img  class="logo" src="Img/Img1.png" alt="logo">
+				</span>
+			</a>
+			
+			<nav class="Accueil" >
+				<span >
+					<a class="souris"  href="Index.html" >ACCUEIL</a>
+					<a id="marquage" class="souris" href="avis.html">AVIS</a>
+					<a class="souris" href="contact.html">CONTACT</a>
+					
+				</span>
+				
+					
+			</nav>
+
+			<div class="toggle">
+				<input  type="checkbox" id="toggle" class="checkbox">
+				<label  for="toggle" class="label"></label>
+			</div>
+		
+			<script>
+				const switchThemeBtn = document.querySelector('#toggle')
+				let toggleTheme = 0;
+
+				switchThemeBtn.addEventListener('click', () => {
+
+					if(toggleTheme === 0) {
+
+						document.documentElement.style.setProperty('--background_1', 'black');
+						document.documentElement.style.setProperty('--background_2', 'white');
+						document.documentElement.style.setProperty('--background_3', '#457b9d');
+						document.documentElement.style.setProperty('--police', 'Lato')
+						document.documentElement.style.setProperty('--fond','#edf2f4')
+						document.documentElement.style.setProperty('--hallowen','black')
+						document.documentElement.style.setProperty('--lien','#08be93')
+						document.documentElement.style.setProperty('--souris','#bc4749')
+						document.documentElement.style.setProperty('--scroll','#95d5b2')
+						document.documentElement.style.setProperty('--rubant_fonce','#95d5b2')
+						document.documentElement.style.setProperty('--rubant_clair','#b7e4c7')
+						document.documentElement.style.setProperty('--trait','#a8dadc')
+						document.documentElement.style.setProperty('--recherche','#95d5b27f')
+						document.documentElement.style.setProperty('--hallowen_logo','white')
+						document.documentElement.style.setProperty('--marquage','#40916c')
+						document.documentElement.style.setProperty('--cart_fond_1','#dfedf2')
+						document.documentElement.style.setProperty('--cart_fond_2','#dfedf2')
+						document.documentElement.style.setProperty('--cart_fond_3','#dfedf2')
+						document.documentElement.style.setProperty('--cart_fond_4','#dfedf2')
+
+
+						toggleTheme++;
+
+					} else {
+
+						document.documentElement.style.setProperty('--background_1', 'white');
+						document.documentElement.style.setProperty('--background_2', 'black');
+						document.documentElement.style.setProperty('--background_3', '#cd6a2e');
+						document.documentElement.style.setProperty('--police', 'Creepster')
+						document.documentElement.style.setProperty('--fond','#262626')
+						document.documentElement.style.setProperty('--hallowen','#cd6a2e')
+						document.documentElement.style.setProperty('--lien','#cd6a2e')
+						document.documentElement.style.setProperty('--souris','#e85d04')
+						document.documentElement.style.setProperty('--scroll','#cd6a2e')
+						document.documentElement.style.setProperty('--rubant_fonce','#cd6b2ed4')
+						document.documentElement.style.setProperty('--rubant_clair','#cd6b2e8c')
+						document.documentElement.style.setProperty('--trait','#e85d04')
+						document.documentElement.style.setProperty('--recherche','#cd6a2e7f')
+						document.documentElement.style.setProperty('--hallowen_logo','#cd6a2e')
+						document.documentElement.style.setProperty('--marquage','#cd6a2e')
+						document.documentElement.style.setProperty('--cart_fond_1','#cd6a2e7f')
+						document.documentElement.style.setProperty('--cart_fond_2','#cd6a2e7f')
+						document.documentElement.style.setProperty('--cart_fond_3','#cd6a2e7f')
+						document.documentElement.style.setProperty('--cart_fond_4','#cd6a2e7f')
+						toggleTheme--;
+					}
+				})
+			</script>
+			
+		
+		</header>
+		
+		<!--  BIENVENUE -->
+
+		<div id="caroussel">
+			<div class="images">
+				<img id="img" src="Img/Img15.jpg" alt="">
+				<img id="img" src="Img/caroussel_4.png" alt="">
+				<img id="img" src="Img/caroussel_2.png" alt="">
+				<img id="img" src="Img/caroussel_3.png" alt="">
+			</div>
+		</div>
+
+	
+		<div class="contour_bienvenue"  >
+			<div >
+				<div class="bienvenue">
+					<h1 id="bienvenue_1">WEAL COOK</h1>
+					<h3 id="bienvenue_2">
+						Vous recherchez a vous faire un repas rapide et avec bonheur ? , 
+						<br>
+						Alors vous-êtes sur le bon endroit pour decouvrir les meilleurs recettes .
+					</h3>
+
+					<div class="recherche">	
+						
+						<input class="input" id="searchInput" type="text" placeholder="Rechercher votre bonheur " />
+						
+						<div class="suggestion"></div>
+					</div>
+				</div>
+
+				<img id="recherche" src="Img/rechercher.png" alt="">
+
+			</div>	
+		</div>
+
+
+		
+        <!-- AVIS -->
+
+		<div class="ribbon">
+
+			<!-- The left side -->
+			<div class="ribbon__side ribbon__side--l"></div>
+			
+			<!--The right side -->
+			<div class="ribbon__side ribbon__side--r"></div>
+			
+		
+			<!-- The content -->
+			<div class="ribbon__content">LES AVIS</div>
+
+		</div>
+
+        <div class="AVIS">
+
+            
+
+            <div class="les_avis">
+                <div class="block_1">
+                    <Div id="avis_1">
+                        <h1 id="guillemet">❝</h1>
+                        <p>
+                            J'aime assez bien la structure du site et c'est vraiment moderne !
+                            <br>
+
+                             Mais je trouve que c'est assez dommage que vous ne prposiez pas plus de recttes
+                             <br>
+							 parceque celles qui sont déja proposées sont vraiment super.
+                        </p>
+
+                        <div class="utilisateur">
+                            <div id="profil">
+                                <img id="profil" src="Img/garçon 2.jpg" alt="">
+                            </div>
+
+                            <div class="PSEUDO">
+                                <h3 id="pseudo"> Marc Antoine
+
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                    </Div>
+
+                    <div id="avis_2">
+                        <h1 id="guillemet">❝</h1>
+
+                        <p>
+							<br>
+                            Personnellement, je suis fan de votre site
+							<br>
+							 les recettes sont super.
+                            <br>
+                            En plus c'est super mignon 
+							<br>
+							il y a un style halloween ;)
+
+
+
+                        </p>
+
+                        <div class="utilisateur">
+                            <div id="profil">
+                                <img id="profil" src="Img/fille 2.jpg" alt="">
+                            </div>
+
+                            <div class="PSEUDO">
+                                <h3 id="pseudo"> Eva claireaux
+
+
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="block_2">
+
+                    <Div id="avis_3">
+                        <h1 id="guillemet">❝</h1>
+                        <p>
+                            Le seul point à retravailler c'est qu'il soit dommage que vous n'ayez pas d'application!
+                            <br>
+                            Sinon tout le reste est super, je vous félicite pour ce beau rendu.
+
+
+                        </p>
+
+                        <div class="utilisateur">
+                            <div id="profil">
+                                <img id="profil" src="Img/fille 3.jpg" alt="">
+                            </div>
+
+                            <div class="PSEUDO">
+                                <h3 id="pseudo"> Lucie Leroy
+
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                    </Div>
+
+                    <Div id="avis_4">
+                        <h1 id="guillemet">❝</h1>
+                        <p>
+                            J'aime beaucoup les animations du site et aussi les interactions qu'on peut avoir avec.
+                            <br>
+                            J'aime aussi le mode qui permet de changer le site dans un style d'haloween.
+                            <br>
+                            C'est vraiment très original :)
+
+                        </p>
+
+                        <div class="utilisateur">
+                            <div id="profil">
+                                <img id="profil" src="Img/garçon 1.jpg" alt="">
+                            </div>
+
+                            <div class="PSEUDO">
+                                <h3 id="pseudo"> Valentin Petit
+
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                    </Div>
+                </div>
+
+
+                <div class="block_3">
+
+                    <Div id="avis_5">
+                        <h1 id="guillemet">❝</h1>
+                        <p>
+                            C'est la première fois que je vois un site qui propose toutes ces fonctionnalites.
+                            <br>
+                            Surtour pour un site de cuisine! Mais c'est vraiment agréable de passer
+                            <br>
+                            son temps sur votre site et trés amusant de chercher chaque petites fonctions.
+                        </p>
+
+                        <div class="utilisateur">
+                            <div id="profil">
+                                <img id="profil" src="Img/fille 4.jpg" alt="">
+                            </div>
+
+                            <div class="PSEUDO">
+                                <h3 id="pseudo"> Lara Duprés
+
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                    </Div>
+
+
+                    <Div id="avis_6">
+                        <h1 id="guillemet">❝</h1>
+                        <p>
+                            J'aime beaucoup vos recettes, meme si on peut en trouver partout comme celles-ci,
+                            <br>
+                            c'est la première fois qu'on trouve un site stylisé de cette manière.
+                            <br>
+                            Cela me donne encore plus envie de cuisiner meme si entre nous ce n'est pas mon fort.
+                        </p>
+
+                        <div class="utilisateur">
+                            <div id="profil">
+                                <img id="profil" src="Img/garçon 4.jpg" alt="">
+                            </div>
+
+                            <div class="PSEUDO">
+                                <h3 id="pseudo"> Nicholas Philippe
+
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                    </Div>
+
+                </div>
+
+
+            </dvi>
+
+
+
+        </div>
+
+
+		<!--PIED DU PAGE  -->
+		<footer class="footer" >
+
+
+			<div>
+				<a id="footer_logo_hover" href="">
+					<img id="footer_logo" src="Img/Img1.png" alt="">
+				</a>
+				
+				
+			</div>
+			
+			<div id="paragraphe_footer">
+
+				<p>
+					Contactez nous ou suivez nous via différents sites ! 
+					<br>
+					<br>
+					Pour cela il vous suffit de choisir l'un de nos contact suivant et de cliquer sur l'icone.
+					<br>
+					<br>
+					"Venez rejoindre notre communauté Weal".
+				</p>
+				<h1 id="num">
+					04932883292
+				</h1>
+				
+				
+				
+
+			</div>
+
+			
+
+
+			<!--RESEAUX SOCIAUX -->
+
+			<div class="footer-information">
+
+				<div class="reseaux">
+					<a href="https://www.instagram.com/">
+						<img id="reseau_1" src="Img/instagram.png" alt="">
+					</a>
+				</div>
+				<div class="reseaux">
+					<a href="https://fr-fr.facebook.com/">
+						<img id="reseau_2" src="Img/facebook.png" alt="">
+					</a>
+				</div>
+				<div class="reseaux">
+					<a href="https://www.tweeter.com/">
+						<img id="reseau_3" src="Img/twitter.png" alt="">
+					</a>
+				</div>
+				<div class="reseaux">
+					<a href="https://www.youtube.com/">
+						<img id="reseau_4" src="Img/youtube.png" alt="">
+					</a>
+				</div>
+
+			</div>
+
+		</footer>
+		
+
+    </body>
+
+</html>

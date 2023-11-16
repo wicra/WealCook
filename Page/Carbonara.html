@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+		
+        <title>Weal Cook / Accueil</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- RESPONSIVE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="../Style/Style.css">
+
+		<!-- JS -->
+		<script src="Js/ap.js"></script>
+		
+		<!-- JS LIKE -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+        <!-- FONT -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pompiere&display=swap" rel="stylesheet">
+
+		
+        <!-- FAVICON -->
+        <link id="favicon" rel="icon" rel="image/png"  href="Img/Img1.png">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	
+    </head>
+    
+
+    <body>
+
+		
+
+        <!-- TETE -->
+		
+        
+		<header>
+			<nav>
+				<div id="toggle" class="logo">
+					<i id="logo" class="fa-solid fa-burger"></i>
+				</div>
+				<ul>
+					<li><a id="marquage" class="souris"  href="Index.html">Accueil</a></li>
+					<li><a class="souris" href="Page/avis.html">Avis</a></li>
+
+					<li><a class="souris" href="Page/contact.html">Recette</a></li>
+				</ul>
+
+				<button class="button" style="font-family: 'Dancing Script', cursive;">Contact</button>
+				
+			</nav>
+			
+
+			
+
+
+			<!--JS MODE-->
+
+
+			<script>
+				const switchThemeBtn = document.querySelector('#toggle')
+				let toggleTheme = 0;
+
+				switchThemeBtn.addEventListener('click', () => {
+
+					if(toggleTheme === 0) {
+
+						document.documentElement.style.setProperty('--background_1', 'black');
+						document.documentElement.style.setProperty('--background_2', 'white');
+						document.documentElement.style.setProperty('--background_3', '#457b9d');
+						document.documentElement.style.setProperty('--police', 'Lato')
+						document.documentElement.style.setProperty('--fond','#edf2f4')
+						document.documentElement.style.setProperty('--hallowen','black')
+						document.documentElement.style.setProperty('--lien','#08be93')
+						document.documentElement.style.setProperty('--souris','#bc4749')
+						document.documentElement.style.setProperty('--scroll','#95d5b2')
+						document.documentElement.style.setProperty('--rubant_fonce','#95d5b2')
+						document.documentElement.style.setProperty('--rubant_clair','#b7e4c7')
+						document.documentElement.style.setProperty('--trait','#a8dadc')
+						document.documentElement.style.setProperty('--recherche','#95d5b27f')
+						document.documentElement.style.setProperty('--hallowen_logo','white')
+						document.documentElement.style.setProperty('--marquage','#40916c')
+						document.documentElement.style.setProperty('--cart_fond_1','#dfedf2')
+						document.documentElement.style.setProperty('--cart_fond_2','#dfedf2')
+						document.documentElement.style.setProperty('--cart_fond_3','#dfedf2')
+						document.documentElement.style.setProperty('--cart_fond_4','#dfedf2')
+
+
+						toggleTheme++;
+
+					} else {
+
+						document.documentElement.style.setProperty('--background_1', 'white');
+						document.documentElement.style.setProperty('--background_2', 'black');
+						document.documentElement.style.setProperty('--background_3', '#cd6a2e');
+						document.documentElement.style.setProperty('--police', 'Creepster')
+						document.documentElement.style.setProperty('--fond','#262626')
+						document.documentElement.style.setProperty('--hallowen','#cd6a2e')
+						document.documentElement.style.setProperty('--lien','#cd6a2e')
+						document.documentElement.style.setProperty('--souris','#e85d04')
+						document.documentElement.style.setProperty('--scroll','#cd6a2e')
+						document.documentElement.style.setProperty('--rubant_fonce','#cd6b2ed4')
+						document.documentElement.style.setProperty('--rubant_clair','#cd6b2e8c')
+						document.documentElement.style.setProperty('--trait','#e85d04')
+						document.documentElement.style.setProperty('--recherche','#cd6a2e7f')
+						document.documentElement.style.setProperty('--hallowen_logo','#cd6a2e')
+						document.documentElement.style.setProperty('--marquage','#cd6a2e')
+						document.documentElement.style.setProperty('--cart_fond_1','#cd6a2e7f')
+						document.documentElement.style.setProperty('--cart_fond_2','#cd6a2e7f')
+						document.documentElement.style.setProperty('--cart_fond_3','#cd6a2e7f')
+						document.documentElement.style.setProperty('--cart_fond_4','#cd6a2e7f')
+						toggleTheme--;
+					}
+				})
+
+			</script>
+			
+
+			<!--JS RACCOURCI-->
+
+			<script>
+								
+				document.onkeydown=function(e){
+					if (e.altKey && e.key == "w"){
+						window.location.href ="surprise.html";
+					}
+					if (e.altKey && e.key =="x")
+						window.location.href ="#popup"
+
+						
+
+				}
+
+			</script>
+
+			
+			<!-- JS LIKE -->
+
+			<script >
+				$(document).ready(function(){
+				  $('.content').click(function(){
+					
+					$('.heart').toggleClass("heart-active")
+				  });
+				});
+			</script>
+
+
+
+
+		</header>
+		
+		
+		
+		<!--  BIENVENUE -->
+		<div class="caroussel-container">
+			<div id="caroussel">
+				<div class="images">
+					<img id="img" src="../Img/Img15.jpg" alt="">
+					<img id="img" src="../Img/caroussel_4.png" alt="">
+					<img id="img" src="../Img/caroussel_2.png" alt="">
+					<img id="img" src="../Img/caroussel_3.png" alt="">
+				</div>
+
+				<div class="contour_bienvenue"  >
+					<div >
+						<div class="bienvenue">
+							<h1 class="bienvenue_1">WEAL COOK</h1>
+							<h3 class="bienvenue_2">
+							Vous recherchez a vous faire un repas rapide et avec bonheur ? , 
+							<br>
+							Alors vous-êtes sur le bon endroit pour decouvrir les meilleurs recettes .
+							</h3>
+		
+							<div class="recherche">	
+								
+								<input class="input" id="searchInput" type="text" placeholder="Rechercher votre bonheur " />
+								<!--<i id="recherche" class="fa-solid fa-magnifying-glass fa-fade" style="color: #000000;"></i>-->
+								
+		
+							</div>
+						</div>
+						
+		
+					</div>	
+				</div>
+			</div>
+		</div>
+	
+
+	
+
+		<h1 id="titre_ingrediant">꧁ LES INGREDIANTS ꧂</h1>
+
+
+		<div class="tableau_recette">
+			<table class="recipe-table">
+
+				<tr>
+					<th class="column-header" colspan="3">En-tête unique</th>
+				</tr>
+			
+				<tr>
+				  <td class="ingredient">Farine</td>
+				  <td class="ingredient">Oeufs</td>
+				  <td class="ingredient">Tomates</td>
+				</tr>
+				<tr>
+				  <td class="ingredient">Sucre</td>
+				  <td class="ingredient">Lait</td>
+				  <td class="ingredient">Poivron</td>
+				</tr>
+				<tr>
+				  <td class="ingredient">Levure chimique</td>
+				  <td class="ingredient">Beurre</td>
+				  <td class="ingredient">Fromage</td>
+				</tr>
+			</table>
+		</div>
+
+
+
+
+        <!-- INGREDIANT -->
+		
+        <div class="INGREDIANT">
+
+			<!--VIDEO-->
+			
+			<div class="container_1">
+           
+				<div class="popup_1" id="popup_1">
+					<div class="popup_inner_1">
+						<div class="popup_video">
+							
+							<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/yeMdYuJmLYg"
+							title="YouTube video player" frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; 
+							encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							</iframe>
+
+						</div>
+						<a   class="popup_close" href="#">X</a>
+					</div>
+	
+					
+				</div>
+			</div>
+			
+			
+			<div class="Video">
+				
+				<a id="Video"  href="#popup_1">
+					<img id="Video_icon" src="Img/video.png" alt="">
+				</a>
+			</div>
+
+		</div>
+
+        
+		
+		
+		<!-- LES ETAPS -->
+
+
+		
+		<div class="timeline">
+			<div class="outer">
+				<div class="etap">
+					<div class="parti">
+						<h3 class="title">ETAPE 1</h3>
+						<p>
+							Émincez finement l'oignon blanc. 
+							Placez la viande hachée dans un bol, mélangez-là avec l'oignon, salez, poivrez.
+						
+						</p>
+					</div>
+				</div>
+			  	<div class="etap">
+					<div class="parti">
+				  		<h3 class="title">ETAPE 2</h3>
+				  		<p>
+							Faconnez des steacks de la taille des pains à burger, enrobez-les de papier film et placez-les au frais 30 minutes..
+												
+
+						</p>
+					</div>
+			  	</div>
+			  	<div class="etap">
+					<div class="parti">
+				  		<h3 class="title">ETAPE 3</h3>
+				  		<p>
+							Pelez l’oignon rouge puis émincez-le. Rincez la tomate puis coupez-la en rondelles.
+					
+						</p>
+					</div>
+			  	</div>
+			  	<div class="etap">
+					<div class="parti">
+				  		<h3 class="title">ETAPE 4</h3>
+				  		<p>
+							Faites chauffer l’huile dans une poêle et faites cuire les steaks 3 à 4 min de chaque côté, selon votre goût. 
+						En fin de cuisson, salez, poivrez, disposez 1 tranche de cheddar sur chaque steak et laissez-la légèrement fondre.
+					
+						</p>
+					</div>
+			  	</div>
+			  	<div class="etap">
+					<div class="parti">
+				  		<h3 class="title">ETAPE 5</h3>
+				  		<p>
+							Fendez les petits pains en 2 et toastez-les légèrement. 
+						Montez les burgers : tartinez chaque moitié de pain de sauce puis garnissez avec la viande, les rondelles de tomate, l’oignon ciselé et les feuilles de salade. 
+						Refermez les burgers et servez aussitôt.
+					
+						</p>
+					</div>
+			  	</div>
+
+				
+			</div>
+		</div>
+
+
+		<!--PIED DU PAGE  -->
+		<footer class="footer" >
+
+			<section class="partie-logo">
+
+				<div class="le-logo">
+					<a class="logo" href="">
+						<i id="logo-footer" class="fa-solid fa-burger"></i>
+					</a>
+					<h2 class="nom-logo">WEAL COOK</h2>
+				</div>
+
+				<div class="paragraph">
+					<p>hesitez pas nous rejoindre sur nos reseaux </p>
+				</div>
+
+				<div class="reseaux">
+
+					<a href=""><i class="fa-brands fa-youtube"></i></a>
+					<a href=""><i class="fa-brands fa-tiktok"></i></a>
+					<a href=""><i class="fa-brands fa-instagram"></i></a>
+
+				</div>
+
+				<div class="createur">
+					<p>@creation_wicramachine_2022</p>
+				</div>
+
+
+			</section>
+
+
+
+			
+			<section id="partie-formulaire" class="bg-gray-100">
+				<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+				<div class="rounded-lg bg-white p-8 shadow-lg max-w-md mx-auto">
+					<h2 class="text-xl font-medium mb-4">NOUS CONTACTER</h2>
+					<form action="" class="space-y-4">
+					<div>
+						<input
+						class="w-full rounded-lg border-gray-200 p-3 text-sm"
+						placeholder="Name"
+						type="text"
+						id="name"
+						style="font-family: 'Dancing Script', cursive;"
+						/>
+					</div>
+			
+					<div>
+						<input
+						class="w-full rounded-lg border-gray-200 p-3 text-sm"
+						placeholder="Email address"
+						type="email"
+						id="email"
+						style="font-family: 'Dancing Script', cursive;"
+						/>
+					</div>
+			
+					<div>
+						<textarea
+						class="w-full rounded-lg border-gray-200 p-3 text-sm"
+						placeholder="Message"
+						rows="4"
+						id="message"
+						style="font-family: 'Dancing Script', cursive;"
+						></textarea>
+					</div>
+			
+					<div class="mt-4 text-center">
+						<button
+						style="font-family: 'Dancing Script', cursive;"
+						type="submit"
+						class="inline-block w-full rounded-lg bg-black px-20 py-3 font-medium text-white sm:w-auto">
+						Send Message
+						</button>
+					</div>
+					</form>
+				</div>
+				</div>
+			</section>
+
+		
+		
+
+
+		</footer>
+
+
+    </body>
+</html>
+
+
+
+
+			
