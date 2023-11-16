@@ -3,8 +3,8 @@
 <html lang="fr">
 
     <head>
-
-        <title>Weal Cook</title>
+		
+        <title>Weal Cook / Accueil</title>
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,25 +14,27 @@
         
         <!-- CSS -->
 
-        <link rel="stylesheet" href="Style/Style.css">
+        <link rel="stylesheet" href="../Style/Style.css">
+
 		<!-- JS -->
 		<script src="Js/ap.js"></script>
+		
+		<!-- JS LIKE -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 
         <!-- FONT -->
-		<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pompiere&display=swap" rel="stylesheet">
 
 		
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-	
-		<link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-
         <!-- FAVICON -->
         <link id="favicon" rel="icon" rel="image/png"  href="Img/Img1.png">
 		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+	
     </head>
     
 
@@ -42,32 +44,27 @@
 
         <!-- TETE -->
 		
-        <header class="header" >
-			
-			<a href="Index.html">	
-				<span>
-					<img  class="logo" src="Img/Img1.png" alt="logo">
-				</span>
-			</a>
-			
-			<nav class="Accueil" >
-				<span >
-					<a id="marquage" class="souris"  href="Index.html" >ACCUEIL</a>
-					<a class="souris" href="avis.html">AVIS</a>
-					<a class="souris" href="contact.html">CONTACT</a>
+        
+		<header>
+			<nav>
+				<div id="toggle" class="logo">
+					<i id="logo" class="fa-solid fa-burger"></i>
+				</div>
+				<ul>
+					<li><a id="marquage" class="souris"  href="Index.html">Accueil</a></li>
+					<li><a class="souris" href="Page/avis.html">Avis</a></li>
 
-					
-					
-				</span>
+					<li><a class="souris" href="Page/contact.html">Recette</a></li>
+				</ul>
+
+				<button class="button" style="font-family: 'Dancing Script', cursive;">Contact</button>
 				
-					
 			</nav>
+			
 
-			<div class="toggle">
-				<input  type="checkbox" id="toggle" class="checkbox">
-				<label  for="toggle" class="label"></label>
-			</div>
-		
+			
+
+
 			<!--JS MODE-->
 
 
@@ -129,81 +126,130 @@
 
 			</script>
 			
-		
+
+			<!--JS RACCOURCI-->
+
+			<script>
+								
+				document.onkeydown=function(e){
+					if (e.altKey && e.key == "w"){
+						window.location.href ="surprise.html";
+					}
+					if (e.altKey && e.key =="x")
+						window.location.href ="#popup"
+
+						
+
+				}
+
+			</script>
+
+			
+			<!-- JS LIKE -->
+
+			<script >
+				$(document).ready(function(){
+				  $('.content').click(function(){
+					
+					$('.heart').toggleClass("heart-active")
+				  });
+				});
+			</script>
+
+
+
+
 		</header>
 		
+		
+		
 		<!--  BIENVENUE -->
-
-		<div id="caroussel">
-			<div class="images">
-				<img id="img" src="Img/Img15.jpg" alt="">
-				<img id="img" src="Img/caroussel_4.png" alt="">
-				<img id="img" src="Img/caroussel_2.png" alt="">
-				<img id="img" src="Img/caroussel_3.png" alt="">
-			</div>
-		</div>
-
-	
-		<div class="contour_bienvenue"  >
-			<div >
-				<div class="bienvenue">
-					<h1 id="bienvenue_1">WEAL COOK</h1>
-					<h3 id="bienvenue_2">
-						Vous recherchez a vous faire un repas rapide et avec bonheur ? , 
-						<br>
-						Alors vous-êtes sur le bon endroit pour decouvrir les meilleurs recettes .
-					</h3>
-
-					<div class="recherche">	
-						
-						<input class="input" id="searchInput" type="text" placeholder="Rechercher votre bonheur " />
-						
-						<div class="suggestion"></div>
-					</div>
+		<div class="caroussel-container">
+			<div id="caroussel">
+				<div class="images">
+					<img id="img" src="../Img/Img15.jpg" alt="">
+					<img id="img" src="../Img/caroussel_4.png" alt="">
+					<img id="img" src="../Img/caroussel_2.png" alt="">
+					<img id="img" src="../Img/caroussel_3.png" alt="">
 				</div>
 
-				<img id="recherche" src="Img/rechercher.png" alt="">
+				<div class="contour_bienvenue"  >
+					<div >
+						<div class="bienvenue">
+							<h1 class="bienvenue_1">WEAL COOK</h1>
+							<h3 class="bienvenue_2">
+							Vous recherchez a vous faire un repas rapide et avec bonheur ? , 
+							<br>
+							Alors vous-êtes sur le bon endroit pour decouvrir les meilleurs recettes .
+							</h3>
+		
+							<div class="recherche">	
+								
+								<input class="input" id="searchInput" type="text" placeholder="Rechercher votre bonheur " />
+								<!--<i id="recherche" class="fa-solid fa-magnifying-glass fa-fade" style="color: #000000;"></i>-->
+								
+		
+							</div>
+						</div>
+						
+		
+					</div>	
+				</div>
+			</div>
+		</div>
+	
 
-			</div>	
+	
+
+		<h1 id="titre_ingrediant">꧁ LES INGREDIANTS ꧂</h1>
+
+
+		<div class="tableau_recette">
+			<table class="recipe-table">
+
+				<tr>
+					<th class="column-header" colspan="3">En-tête unique</th>
+				</tr>
+			
+				<tr>
+				  <td class="ingredient">Farine</td>
+				  <td class="ingredient">Oeufs</td>
+				  <td class="ingredient">Tomates</td>
+				</tr>
+				<tr>
+				  <td class="ingredient">Sucre</td>
+				  <td class="ingredient">Lait</td>
+				  <td class="ingredient">Poivron</td>
+				</tr>
+				<tr>
+				  <td class="ingredient">Levure chimique</td>
+				  <td class="ingredient">Beurre</td>
+				  <td class="ingredient">Fromage</td>
+				</tr>
+			</table>
 		</div>
 
 
 
-
-		
 
         <!-- INGREDIANT -->
 		
         <div class="INGREDIANT">
 
-			<div class="ribbon">
-
-				<!-- The left side -->
-				<div class="ribbon__side ribbon__side--l"></div>
-				
-				<!--The right side -->
-				<div class="ribbon__side ribbon__side--r"></div>
-				
-			
-				<!-- The content -->
-				<div class="ribbon__content">Riz cantonais</div>
-	
-			</div>
-
-
-
-			 <!--VIDEO-->
+			<!--VIDEO-->
 			
 			<div class="container_1">
            
 				<div class="popup_1" id="popup_1">
 					<div class="popup_inner_1">
 						<div class="popup_video">
-	
-							<iframe id="video" width="560" height="315" 
-							src="https://www.youtube.com/embed/KmNCMhW1Ytg"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							
-							
+							<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/yeMdYuJmLYg"
+							title="YouTube video player" frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; 
+							encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							</iframe>
+
 						</div>
 						<a   class="popup_close" href="#">X</a>
 					</div>
@@ -220,68 +266,6 @@
 				</a>
 			</div>
 
-
-			<div id="Titre">
-				<h2>LES INGREDIENTS</h2>
-			</div>
-
-
-
-			
-
-			<div class="les_ingrediants">
-
-				<a class="ingrediant_1" href="#">
-					<img id="ingrediant_1"  src="Img/riz-brun.png" alt="">       
-                    250 g de riz
-
-				</a>
-		
-				<a class="ingrediant_2" href="#">
-					<img id="ingrediant_2"   src="Img/oeuf.png" alt="">
-                    2 œufs
-
-				</a>
-		
-				<a class="ingrediant_3" href="#">
-					<img  id="ingrediant_3" src="Img/jambon.png" alt="">
-                    75 g de dés de jambon
-                    
-				</a>
-
-                <a class="ingrediant_4" href="#">
-					<img id="ingrediant_4"  src="Img/petit-pois.png" alt="">
-                    125 g de petits pois
-
-				</a><br>
-			
-				<a  class="ingrediant_5" href="#">
-					<img id="ingrediant_5"   src="Img/oignon-vert.png" alt="">
-                    oignons verts
-
-                    
-				</a>
-		
-				<a class="ingrediant_6" href="#">
-					<img  id="ingrediant_6" src="Img/sauce-soja.png" alt="">
-                    2 c. à soupe Sauce soja
-    
-				</a>
-
-                <a class="ingrediant_7"  href="#">
-					<img id="ingrediant_7"  src="Img/crevette.png" alt="">
-                    100g de petites crevettes 
-				</a>
-			
-				<a class="ingrediant_8"  href="#">
-					<img id="ingrediant_8"   src="Img/sel-et-poivre.png" alt="">
-				    sel et poivre
-                    
-				</a>
-		
-				
-			
-			</div>
 		</div>
 
         
@@ -297,8 +281,9 @@
 					<div class="parti">
 						<h3 class="title">ETAPE 1</h3>
 						<p>
-							Dans une marmite à riz, faites cuire le riz selon les indications du paquet. 
-							Égouttez-le et réservez-le pour plus tard.
+							Émincez finement l'oignon blanc. 
+							Placez la viande hachée dans un bol, mélangez-là avec l'oignon, salez, poivrez.
+						
 						</p>
 					</div>
 				</div>
@@ -306,9 +291,8 @@
 					<div class="parti">
 				  		<h3 class="title">ETAPE 2</h3>
 				  		<p>
-							Dans un saladier, cassez les œufs et battez-les en omelette. 
-				        Salez, poivrez et ajoutez l'ail vert préalablement coupés finement.
-
+							Faconnez des steacks de la taille des pains à burger, enrobez-les de papier film et placez-les au frais 30 minutes..
+												
 
 						</p>
 					</div>
@@ -317,8 +301,8 @@
 					<div class="parti">
 				  		<h3 class="title">ETAPE 3</h3>
 				  		<p>
-							Dans une poêle, versez les œufs.
-							Quand l'omelette commence à prendre, remuez la à laide d'une spatule de sorte que l'omellete soit en petits morceaux.
+							Pelez l’oignon rouge puis émincez-le. Rincez la tomate puis coupez-la en rondelles.
+					
 						</p>
 					</div>
 			  	</div>
@@ -326,10 +310,9 @@
 					<div class="parti">
 				  		<h3 class="title">ETAPE 4</h3>
 				  		<p>
-							
-						Dans une poêle, faites chauffer le reste d'huile.
-						Et faites cuire les crevettes.
-
+							Faites chauffer l’huile dans une poêle et faites cuire les steaks 3 à 4 min de chaque côté, selon votre goût. 
+						En fin de cuisson, salez, poivrez, disposez 1 tranche de cheddar sur chaque steak et laissez-la légèrement fondre.
+					
 						</p>
 					</div>
 			  	</div>
@@ -337,94 +320,106 @@
 					<div class="parti">
 				  		<h3 class="title">ETAPE 5</h3>
 				  		<p>
-							Ajoutez dans la poêle le riz cuit, l'omelette, les petits pois et les cubes de jambon puis laissez cuire 5 min en mélangeant. 
-						Assaisonnez de sauce soja sel et poivre puis servez bien chaud.
+							Fendez les petits pains en 2 et toastez-les légèrement. 
+						Montez les burgers : tartinez chaque moitié de pain de sauce puis garnissez avec la viande, les rondelles de tomate, l’oignon ciselé et les feuilles de salade. 
+						Refermez les burgers et servez aussitôt.
+					
 						</p>
 					</div>
 			  	</div>
-			</div>
-		</div>
 
-
-
-		<!--FLECHE-->
-
-		<div class="FLECHE">
-	
-			<div class="haut">
-				<a  href="#caroussel">
-					<img  id="fleche_haut" src="Img/fleche.png" alt="">
-				</a>
-			</div>
 				
+			</div>
 		</div>
+
 
 		<!--PIED DU PAGE  -->
 		<footer class="footer" >
 
+			<section class="partie-logo">
 
-			<div>
-				<a id="footer_logo_hover" href="">
-					<img id="footer_logo" src="Img/Img1.png" alt="">
-				</a>
-				
-				
-			</div>
+				<div class="le-logo">
+					<a class="logo" href="">
+						<i id="logo-footer" class="fa-solid fa-burger"></i>
+					</a>
+					<h2 class="nom-logo">WEAL COOK</h2>
+				</div>
+
+				<div class="paragraph">
+					<p>hesitez pas nous rejoindre sur nos reseaux </p>
+				</div>
+
+				<div class="reseaux">
+
+					<a href=""><i class="fa-brands fa-youtube"></i></a>
+					<a href=""><i class="fa-brands fa-tiktok"></i></a>
+					<a href=""><i class="fa-brands fa-instagram"></i></a>
+
+				</div>
+
+				<div class="createur">
+					<p>@creation_wicramachine_2022</p>
+				</div>
+
+
+			</section>
+
+
+
 			
-			<div id="paragraphe_footer">
-
-				<p>
-					Contactez nous ou suivez nous via différents sites ! 
-					<br>
-					<br>
-					Pour cela il vous suffit de choisir l'un de nos contact suivant et de cliquer sur l'icone.
-					<br>
-					<br>
-					"venez rejoindre notre communauté Weal".
-				</p>
-				<h1 id="num">
-					04932883292
-				</h1>
-				
-				
-				
-
-			</div>
-
+			<section id="partie-formulaire" class="bg-gray-100">
+				<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+				<div class="rounded-lg bg-white p-8 shadow-lg max-w-md mx-auto">
+					<h2 class="text-xl font-medium mb-4">NOUS CONTACTER</h2>
+					<form action="" class="space-y-4">
+					<div>
+						<input
+						class="w-full rounded-lg border-gray-200 p-3 text-sm"
+						placeholder="Name"
+						type="text"
+						id="name"
+						style="font-family: 'Dancing Script', cursive;"
+						/>
+					</div>
 			
-
-
-			<!--RESEAUX SOCIAUX -->
-
-			<div class="footer-information">
-
-				<div class="reseaux">
-					<a href="https://www.instagram.com/">
-						<img id="reseau_1" src="Img/instagram.png" alt="">
-					</a>
+					<div>
+						<input
+						class="w-full rounded-lg border-gray-200 p-3 text-sm"
+						placeholder="Email address"
+						type="email"
+						id="email"
+						style="font-family: 'Dancing Script', cursive;"
+						/>
+					</div>
+			
+					<div>
+						<textarea
+						class="w-full rounded-lg border-gray-200 p-3 text-sm"
+						placeholder="Message"
+						rows="4"
+						id="message"
+						style="font-family: 'Dancing Script', cursive;"
+						></textarea>
+					</div>
+			
+					<div class="mt-4 text-center">
+						<button
+						style="font-family: 'Dancing Script', cursive;"
+						type="submit"
+						class="inline-block w-full rounded-lg bg-black px-20 py-3 font-medium text-white sm:w-auto">
+						Send Message
+						</button>
+					</div>
+					</form>
 				</div>
-				<div class="reseaux">
-					<a href="https://fr-fr.facebook.com/">
-						<img id="reseau_2" src="Img/facebook.png" alt="">
-					</a>
 				</div>
-				<div class="reseaux">
-					<a href="https://www.tweeter.com/">
-						<img id="reseau_3" src="Img/twitter.png" alt="">
-					</a>
-				</div>
-				<div class="reseaux">
-					<a href="https://www.youtube.com/">
-						<img id="reseau_4" src="Img/youtube.png" alt="">
-					</a>
-				</div>
+			</section>
 
-			</div>
+		
+		
+
 
 		</footer>
-
-        
-        
 
 
     </body>

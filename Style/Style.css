@@ -437,6 +437,10 @@ nav a {
 	.RECETTE i{
 		font-size: 30px;
 	}
+
+	.nom-logo {
+		display: none;
+	}
     
 	
     
